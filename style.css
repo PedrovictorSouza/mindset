@@ -1,0 +1,987 @@
+@font-face {
+    font-family: morganite;
+    src: url(fonts/Morganite-Medium.ttf);
+  }
+
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border: 1px solid red;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+  }
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #0b080b;
+  }
+
+  body {
+    background: #000;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+  }
+
+  button {
+      color: white;
+      border: 1px solid red;
+      border-radius: none;
+      background: transparent;
+      color: red;
+      font-size: 1.2vw;
+      margin-top: 10px;
+      font-family: 'Oswald', sans-serif;
+  }
+
+  button:hover {
+    background: red;
+    color:white;
+    transition: .3s;
+  }
+  
+  a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    width: auto;
+    min-width: 8vw;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+  
+  h1,h3 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+  }
+  
+  h1 {
+    font-weight: 400;
+    font-family: morganite;
+    font-size: 8em;
+    color: red;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 14vh;
+    text-align: left;
+  }
+
+  h2 {
+    color: white;
+    font-family: 'Morganite', sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  h3 {
+    color: #FFEB3B;
+    font-family: 'Oswald', sans-serif;
+    padding: 0em 0.3em 0.1em 0.3em;
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-shadow: 2px 2px 8px black;
+  }
+
+  h4,h5 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  h4 {
+    color: red;
+    font-family: 'Morganite', sans-serif;
+    font-size: 30pt;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  
+  h5 {
+    color: white;
+    font-family: 'Morganite', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  li {   
+    list-style-type: none;
+    width: 200px;
+    height: 146px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    text-align: left;
+    font-size: 14pt;
+    margin: 1vw;
+    font-weight: 400;
+    background: url(imgs/balao-01.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 30px;
+    line-height: 25px;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    transition: 300ms;
+  }
+
+  
+  nav {
+    position: fixed;
+    top: 0px;
+    background: black;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 1001;
+  }
+
+  nav a {
+    color: white;
+    margin-right: 2vw;
+    font-size: 9pt;
+  }
+
+ 
+  nav a:hover, .nav-active {
+    border-bottom: 2px solid red;
+    transition: .3s;
+    padding: .2vw .5vw .2vw .5vw;
+    font-weight: 700;
+    color: red;
+  }
+
+  nav div {
+    margin-right: 3vw;
+  }
+  
+  p {
+    color: white;
+    font-size: 14pt;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  
+  section {
+    width: 100%;
+    height: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  span {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color: red;
+    margin-top: 20px;
+    font-size: 1em;
+    /* border-bottom: 2px solid red; */
+    cursor: pointer;
+  }
+  
+  #mastertech h1 {
+    margin-top: 0px;
+  }
+
+  #mastertech h2 {
+    font-family: 'oswald';
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+
+
+  #mastertech span {
+    font-family: 'morganite';
+    font-size: 2.5em !important;
+    background: red;
+    color: black;
+  }
+
+
+  /* carrossel */
+  * {box-sizing:border-box}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: 10vh;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 67vh;
+    left: 45%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+ 
+
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* fim do carrossel */
+  
+  .a-videos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: red;
+    border-bottom: 1px solid red;
+  }
+
+  .a-disc {
+    position: absolute;
+    top: 0vh;
+    left: -18vw;
+    transition: 1s;
+    z-index: 1002;
+  }
+
+  .baixar-manifesto {
+    display: flex;
+    width: 26vw;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5vw;
+  }
+
+  .baixar-manifesto p {
+    width: fit-content;
+    margin-right: 1vw;
+  }
+
+
+  .catalogo_div {
+    width: 80vw;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalogo_div_sinopse {
+    margin-top: 20px;
+    color: red;
+    font-size: 22pt;
+    letter-spacing: 2px;
+  }
+
+  .catalogo_div p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    margin-top: 0px;
+    line-height: 30px;
+  }
+  
+  .catalogo_div div {
+    width: 20vw;
+    margin-bottom: 8vh;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .catalogo_div img {
+    width: 15vw;
+  }
+  
+  .contexto {
+    width: 30vw;
+  }
+
+  .contato_text {
+    color: black;
+    font-size: 32pt;
+  }
+
+  .contato_text_a {
+    width: 30vw;
+    font-size: 32pt;
+  }
+  
+  .essencia_a {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .essencia_a img {
+    width: 25vw;
+  }
+  
+  .essencia_a p:hover {
+    color: red;
+    transition: .3s;
+  }
+
+  .essencia_a p {
+    text-align: left;
+    font-family: 'morganite';
+    font-size: 2.5vw;
+    letter-spacing: 3px;
+    margin: 20px;
+  }
+  
+  .essencia_b {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 44vh;
+    margin-top: 6vh;
+  }
+  
+  .essencia_c {
+    display: flex;
+    margin: 3vw;
+    margin-top: 5vh;
+  }
+  
+  .essencia_c p {
+    width: 30vw;
+    margin: 1vw;
+  }
+
+ .essencia_img {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+ }
+
+ .essencia_b-imgs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+
+ .essencia_b-imgs-a, .essencia_b-imgs-b, .essencia_b-imgs-c {
+   width: 35vw;
+   opacity: .8;
+ }
+
+ .essencia_b-imgs-a {
+   position: absolute;
+   top: -27vh;
+   transition: 1s;
+   z-index: 1002;
+ }
+
+ .essencia_b-imgs-b {
+  position: absolute;
+  top: -17vh;
+  transition: 1s;
+ }
+
+ .essencia_b-imgs-c {
+  position: absolute;
+  top: -8vh;
+  transition: 1s;
+ }
+
+
+ 
+
+  
+  .home-gifs {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .home-texts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .mastertech_video {
+    position: absolute;
+    z-index: -1;
+    top: 7vh;
+    right: 2vw;
+  }
+  
+  .o_que_e_div, .o_que_e_div_b {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    height: fit-content;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+  }
+
+  .o_que_e_div_b {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+  }
+
+  .o_que_e_div_a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.o_que_e_div_a h2 {
+  width: 100%;
+  text-align: left;
+}
+
+.o_que_e_div_b h2 {
+  width: fit-content;
+  text-align: left;
+}
+
+  .o_que_e_div div {
+    border: 1px solid red;
+    margin-right: 3vw;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .o_que_e_div h1 {
+    font-size: 2em;
+    letter-spacing: 5px;
+    margin-right: 10px;
+  }
+
+
+  .manifesto {
+    width: 3vw;
+    cursor: pointer;
+  }
+
+  
+  .o_que_e_p {
+    text-align: left;
+    color: white;
+    width: 28vw;
+  }
+
+  p.senso-text-b {
+    width: 25vw;
+}
+  
+  .page-title {
+    position: absolute;
+    top: 8vh;
+    left: 4vw;
+    color: white;
+  }
+  
+
+  .tape-a, .tape-b,  .tape-c, .tape-d {
+    position: absolute;
+  }
+
+  .tape-a {
+    top: 18vh;
+  }
+
+  .tape-b {
+    top: 54vh;
+    left: 50vw;
+  }
+
+  .tape-c {
+    top: 53vh;
+    left: 77vw;
+  }
+
+
+  .tape-d {
+    top: 15vh;
+    left: 75vw;
+  }
+
+
+  
+  .title {
+    font-size: 20vw;
+    letter-spacing: 25px;
+    font-weight: 600;
+    width: 100vw;
+    text-align: center;
+    padding-top: 10vh;
+    color: red;
+  }
+
+  .subtitle {
+    width: 100%;
+    text-align: center;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  .title-a {
+    font-family: morganite;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: white;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    z-index: 1001;
+    width: 100%;
+    text-align: center;
+    color: #ffcf00;
+    position: absolute;
+    letter-spacing: 10px;
+    top: 12vh;
+  }
+  
+  .title-b {
+    text-align: center;
+  }
+
+  #catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  
+  #contexto, #mastertech {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    margin-top: 10vh;
+  }
+
+  #cultura {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #ementa {
+    width: 25vw;
+    margin-bottom: 10vh;
+  }
+
+
+  .cultura_div_a, .cultura_div_b {
+    width: 35vw;
+    margin-right: 30px;
+  }
+
+  .cultura_text_a {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cultura_text_a h2 {
+
+  }
+
+  #contato {
+    width: 100%;
+    min-height: 20vw;
+    background: red;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #mastertech {
+    padding-top: 10vh;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #nucleo {
+    width: 66vw;
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+  }
+
+  #popup_close {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  #popup {
+    min-width: 20vw;
+    min-height: 20vh;
+    border: 1px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    background: black;
+    position: absolute;
+    top: 68%;
+    left: 75%;
+    z-index: 1003;
+
+    -webkit-box-shadow: 8px 9px 0px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 9px 0px 1px rgba(0,0,0,0.75);
+    box-shadow: 8px 9px 0px 1px rgba(0,0,0,0.75);
+  }
+
+  #popup div {
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3px;
+    padding-right: 3px;
+
+
+  }
+
+  #popup h1 {
+    width: 93%;
+    letter-spacing: 3px;
+  }
+
+  .popup_posters {
+    width: 6vw;
+    margin: 10px;
+  }
+  
+  .proposta_img_a, .proposta_img_b {
+    width: 70vw;
+    position: absolute;
+  }
+
+  .proposta_img_b  {
+    z-index: 1001;
+  }
+
+  .proposta_img_b:hover  {
+    opacity: 0;
+    transition: 2s;
+  }
+
+
+  #essencia {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    height: fit-content;
+  }
+
+  #essencia p {
+    font-size: 12pt;
+    max-width: 20vw;
+  }
+
+  .repertorio, .senso {
+    width: 15.6vw;
+    margin-right: 30px;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+
+  .senso {
+    margin-top: 10vh;
+    margin-left: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+  
+  .senso div {
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+  
+  #home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+
+  #myVideo, #myVideoB {
+    height: 100vh;
+    width: 50%;
+    z-index: 0;
+    position: absolute;
+  }
+  #myVideo {
+    top: 0;
+    left: 0;
+  }
+
+  #myVideoB {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #lettering {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  #logo {
+    width: 12vw;
+  }
+  
+  #o_que_e {
+    position: relative;
+    height: fit-content;
+    min-height: 100vh;
+    width: 100vw;
+    background: black;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+  #repertorio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+
+  #repertorio h2 {
+    left: 0;
+    top: 13vh;
+  }
+  
+  #senso {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('imgs/GPA-Sensocriticobg.png');
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  
+  
+  @media screen and (max-width: 768px) {
+
+
+
+
+    nav {
+      display: none;
+    }
+    
+    p {
+      font-size: 16pt;
+    }
+    
+    .catalogo_div div {
+    margin-bottom: 8vh;
+    width: 45%;
+    min-width: 200px;
+  }
+  
+    
+    .catalogo_div img {
+      width: 35vw;
+      min-width: 200px;
+    }
+    
+    
+    .home-gifs {
+      height: fit-content;
+    }
+    
+
+    .home-texts {
+      height: 40vh;
+      align-items: flex-end;
+      display: flex;
+      margin-bottom: 9vh;
+    }
+
+    .home-texts a h1 {
+      margin-bottom: 13vh;
+    }
+
+    .home-texts a:nth-child(3) {
+      width: 27vw;
+    }
+
+    .o_que_e_div div {
+      width: 50vw;
+      height: auto;
+    }
+
+    .o_que_e_div ul {
+      height: 67vh;
+      overflow-y: scroll;
+    }
+
+    .title {
+      font-size: 16vw;
+      letter-spacing: 16px;
+    }
+
+    #myVideo {
+      width: 100%;
+    }
+
+    #myVideoB {
+      display: none;
+    }
+    
+    
+
+
+    #senso {
+      height: fit-content;
+    }
+
+    
+  }
