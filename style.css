@@ -124,7 +124,8 @@
     font-weight: 300;
     letter-spacing: 1px;
   }
-  
+
+ 
   ul {
     width: 100%;
     height: 100%;
@@ -417,13 +418,25 @@
   .contato_text {
     color: black;
     font-size: 32pt;
+    margin-top: 50px;
   }
 
   .contato_text_a {
     width: 30vw;
     font-size: 32pt;
+    margin-top: 50px;
   }
   
+
+  .cultura_oito_passos {
+    font-size: 20em;
+    letter-spacing: 1.6vw;
+    z-index: 0;
+    color: white;
+    line-height: 250px;
+    margin-top: 100px;
+  }
+
   .essencia_a {
     margin: 0 auto;
     display: flex;
@@ -737,6 +750,7 @@
     width: 66vw;
     margin-top: 12vh;
     margin-bottom: 5vh;
+    z-index: 1001;
   }
 
   #popup_close {
@@ -809,11 +823,12 @@
 
   #essencia p {
     font-size: 12pt;
-    max-width: 20vw;
+    margin-bottom: 12vh;
+    max-width: 60vw;
   }
 
   .repertorio, .senso {
-    width: 15.6vw;
+    width: 25vw;
     margin-right: 30px;
     margin-left: 10px;
     overflow: hidden;
@@ -821,15 +836,15 @@
 
   .senso {
     margin-top: 10vh;
-    margin-left: 25vw;
     display: flex;
     flex-wrap: wrap;
     width: fit-content;
   }
   
   .senso div {
-    margin-right: 10px;
+    margin-right: 15px;
     margin-bottom: 50px;
+
   }
   
   #home {
