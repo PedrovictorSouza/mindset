@@ -57,7 +57,6 @@
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
     width: auto;
-    min-width: 8vw;
     color: white;
   }
 
@@ -408,6 +407,18 @@
     margin-right: 1vw;
   }
 
+.carousel-container {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 60%;
+  height: fit-content;
+}
+
 
   .catalogo_div {
     width: 80vw;
@@ -723,6 +734,10 @@
   
   .title-b {
     text-align: center;
+  }
+
+  .trs {
+    width: 40vw;
   }
 
   #catalogo {
