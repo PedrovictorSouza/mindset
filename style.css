@@ -250,13 +250,14 @@
 
   #mastertech h2 {
     font-family: 'oswald';
-    font-size: 1.3em;
+    font-size: 2vw;
     font-weight: 100;
     min-width: 50vw;
-    margin-right: 2em;
+    margin-right: 6em;
+    margin-left: 2vw;
     margin-bottom: 8vh;
-
   }
+
 
 
   #mastertech span {
@@ -790,16 +791,17 @@
   #mastertech {
     padding-top: 10vh;
     width: 100%;
-    height: fit-content;
     background: #ff3d00;
+    height: 150vh;
   }
 
   #mastertech h1 {
     color: white;
     position: absolute;
-    top: 28vh;
+    top: -54vh;
     width: 150vw;
-    left: -64vw;
+    font-size: 8vw;
+    left: -67vw;
     transform: rotate(-90deg);
   }
 
@@ -1128,6 +1130,16 @@
 
     #myVideoB {
       display: none;
+    }
+
+    #mastertech h2 {
+      font-family: 'oswald';
+      font-size: 1.3em;
+      font-weight: 100;
+      min-width: 50vw;
+      margin-right: 2em;
+      margin-bottom: 8vh;
+  
     }
     
     
