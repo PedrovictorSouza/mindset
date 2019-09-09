@@ -8,6 +8,7 @@ function carrossel() {
 
 
 
+
 function teste(offset) {
 
   var posters = [

@@ -96,19 +96,21 @@
   h1 {
     font-weight: 400;
     font-family: morganite;
-    font-size: 8em;
+    font-size: 15vw;
+    letter-spacing: .8vw;
+    font-weight: 700;
     color: red;
     width: 100%;
     text-align: center;
     margin-top: 14vh;
     text-align: left;
-  }
+}
 
   h2 {
     color: white;
     font-family: 'Morganite', sans-serif;
     font-weight: 500;
-    font-size: 3em;
+    font-size: 7.5vw;
     letter-spacing: 2px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -222,6 +224,7 @@
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     font-weight: 300;
+    max-width: 45vw;
   }
   
   section {
@@ -233,12 +236,9 @@
 
   span {
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
     color: red;
-    margin-top: 20px;
-    font-size: 1em;
-    /* border-bottom: 2px solid red; */
-    cursor: pointer;
+    font-size: 7vw;
+    width: 100%;
   }
   
   #mastertech h1 {
@@ -441,7 +441,6 @@
     width: 20vw;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    font-size: 1.3vw;
     letter-spacing: 1px;
     margin-bottom: 6px;
     margin-top: 0px;
@@ -460,10 +459,6 @@
   .catalogo_div img {
     width: 15vw;
   }
-  
-  .contexto {
-    width: 30vw;
-  }
 
   .contato_text {
     color: black;
@@ -476,14 +471,24 @@
     font-size: 32pt;
     margin-top: 50px;
   }
+
+  .contexto {
+    background-image: url(./imgs/art01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 90vh;
+    display: flex;
+  }
   
 
   .cultura_oito_passos {
-    font-size: 20em;
+    font-size: 15vw;
     letter-spacing: 1.6vw;
     z-index: 0;
     color: #ffffffde;
-    line-height: 250px;
     margin-top: 100px;
     font-weight: 700;
   }
@@ -589,13 +594,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-  }
-
-  .mastertech_img {
-    position: absolute;
-    top: 12vh;
-    left: 3vw;
-    max-width: 3vw;
+    height: 100vh;
   }
   
   .o_que_e_div, .o_que_e_div_b {
@@ -698,7 +697,6 @@
 
   
   .title {
-    font-size: 20vw;
     letter-spacing: 25px;
     font-weight: 600;
     width: 100vw;
@@ -780,10 +778,6 @@
     justify-content: space-between;
   }
 
-  .cultura_text_a h2 {
-
-  }
-
   #contato {
     width: 100%;
     min-height: 42vw;
@@ -797,13 +791,16 @@
     padding-top: 10vh;
     width: 100%;
     height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
     background: #ff3d00;
   }
 
   #mastertech h1 {
     color: white;
+    position: absolute;
+    top: 28vh;
+    width: 150vw;
+    left: -64vw;
+    transform: rotate(-90deg);
   }
 
   #nucleo {
@@ -881,12 +878,6 @@
     height: fit-content;
   }
 
-  #essencia p {
-    font-size: 12pt;
-    margin-bottom: 12vh;
-    max-width: 60vw;
-  }
-
   .repertorio, .senso {
     width: 25vw;
     margin-right: 30px;
@@ -941,7 +932,8 @@
   }
 
   #logo {
-    width: 12vw;
+    width: 2.5vw;
+    margin-left: 10px;
   }
   
   #o_que_e {
@@ -985,14 +977,71 @@
   @media screen and (max-width: 768px) {
 
 
+    #ementa {
+      width: 60vw;
+  }
 
+  .trs {
+    width: 90vw;
+}
+
+  #essencia p {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+
+  #catalogo {
+    justify-content: flex-start;
+  }
+
+  #mastertech div {
+    flex-wrap: wrap;
+  }
+
+  #mastertech div h2 {
+    min-width: 80%;
+    margin-left: 15vw;
+  }
+
+  .catalogo_div {
+    width: 100%;
+    margin-top: 8vh;
+  }
+
+  .catalogo_div p {
+    width: 100%;
+  }
+
+  button {
+    font-size: 6vw;
+  }
+
+    section {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    h1 {
+      font-size: 25vw;
+    }
+
+    h2 {
+      font-size: 12.5vw;
+      max-width: 50vw;
+    }
 
     nav {
       display: none;
     }
+
+    li.balao {
+      width: 35vw;
+    }
     
     p {
       font-size: 16pt;
+      max-width: 100%;
+      width: 100%;
     }
     
     .catalogo_div div {
@@ -1001,6 +1050,36 @@
     min-width: 200px;
   }
   
+
+  .o_que_e_div_b {
+    justify-content: flex-start;
+  }
+
+  .contexto button {
+    width: 43vw;
+    margin-bottom: 10px;
+    background: red;
+    color: white;
+  }
+
+  .contexto div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    background: #000000ba;
+    height: fit-content;
+  }
+
+  .contexto h2 {
+    align-self: flex-start;
+    margin: 20px;
+  }
+
+  .cultura_div_a, .cultura_div_b {
+    width: 100%;
+  }
     
     .catalogo_div img {
       width: 35vw;
