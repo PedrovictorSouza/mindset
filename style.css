@@ -77,13 +77,13 @@
   }
 
   footer div {
-    margin-top: 10vh;
+    margin-top: 3vh;
   }
 
   footer img {
     position: absolute;
-    top: 10vh;
-    left: 5vw;
+    top: 2vh;
+    left: 1vw;
     max-width: 3vw;
   }
 
@@ -237,9 +237,22 @@
   span {
     font-family: 'Oswald', sans-serif;
     color: red;
-    font-size: 7vw;
+    font-size: 3vw;
     width: 100%;
   }
+
+  section#cases {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+
+.pointers {
+  position: absolute;
+  bottom: 0;
+  height: 5vh;
+}
   
   #mastertech h1 {
     margin-top: 0px;
@@ -282,14 +295,19 @@
   
   /* Slideshow container */
   .slideshow-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: 0px;
+    width: 100vw;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
+  }
+
+  .numbertext h2 {
+    margin-top: 20px;
   }
   
   /* Next & previous buttons */
@@ -299,12 +317,17 @@
     width: auto;
     margin-top: 10vh;
     padding: 16px;
+    padding-top: 3px; 
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 33px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+  }
+
+  .prev {
+    padding-left: 0px;
   }
   
   /* Position the "next button" to the right */
@@ -333,20 +356,18 @@
   .numbertext {
     color: #000000;
     font-size: 12px;
-    padding: 8px 12px;
     position: absolute;
-    top: 67vh;
-    left: 45%;
+    top: 51vh;
+    left: 0%;
   }
   
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 2px;
+    width: 26vw;
     margin: 0 2px;
     background-color: #bbb;
-    border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
@@ -355,7 +376,7 @@
 
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #ff0000;
   }
   
   /* Fading animation */
@@ -475,15 +496,43 @@
 
   .contexto {
     background-image: url(./imgs/art01.png);
+    align-items: flex-start;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    align-items: flex-end;
     flex-wrap: wrap;
     height: 90vh;
     display: flex;
+    width: 100%;
+  }
+
+  .contexto h2, .contexto span, .contexto p, .contexto button {
+    margin: 30px;
+    margin-right: 0px;
+  }
+
+  .contexto p, .contexto button {
+    margin-top: 0px;
+  }
+
+  .contexto div {
+    background: #00000096;
+    width: 100%;
+    align-self: flex-end;
+  }
+
+  .repertorio h2 {
+    margin-top: 10vh;
   }
   
+  .repertorio p {
+    padding: 0em 2em 0em 5em;
+    align-self: center;
+  }
+
+  .senso img {
+    width: 17vw;
+  }
 
   .cultura_oito_passos {
     font-size: 15vw;
@@ -881,10 +930,14 @@
   }
 
   .repertorio, .senso {
-    width: 25vw;
+    width: 100%;
     margin-right: 30px;
     margin-left: 10px;
     overflow: hidden;
+  }
+
+  .repertorio div {
+    display: flex;
   }
 
   .senso {
@@ -960,6 +1013,10 @@
   #repertorio h2 {
     left: 0;
     top: 13vh;
+  }
+
+  #repertorio-img {
+    width: 37vw;
   }
   
   #senso {

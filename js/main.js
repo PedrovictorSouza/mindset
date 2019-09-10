@@ -173,15 +173,15 @@ function myFunction() {
     ]  
 
     $(".balao").html("")
-    $(".balao").css({"background":"url(imgs/balao-03.svg) no-repeat center","color":"red"})
+    $(".balao").css({"background":"url(imgs/balao-03.svg) no-repeat center","color":"red","transition":"1s"})
     $(e.toElement).html(balloonText[x])
-    $(e.toElement).css({"background":"url(imgs/balao-02.svg) no-repeat center", "color":"red"})
+    $(e.toElement).css({"background":"url(imgs/balao-02.svg) no-repeat center", "color":"red",})
     
 }
 
 function changeToNormal() {
   $(".balao").html("")
-  $(".balao").css({"background":"url(imgs/balao-01.svg) no-repeat center", "color":"black"})
+  $(".balao").css({"background":"url(imgs/balao-01.svg) no-repeat center", "color":"black", "transition":"1s"})
 }
 
 

@@ -19,8 +19,7 @@
 		  <a class="nav-a" href="#cultura">CULTURA AGIL</a>
           <a class="nav-a" href="#essencia">O PENSAMENTO EM PRATICA</a>
           <a class="nav-a" href="#catalogo">OS CURSOS</a>
-          <a class="nav-a">O METODO</a>
-          <a class="nav-a" href="">CASES</a>
+          <a class="nav-a" href="#cases">CASES</a>
           <a class="nav-a" href="#mastertech">A MASTERTECH</a>
           <a class="nav-a" onclick="showHeight()">CONTATO</a>
         </div>
@@ -1019,6 +1018,8 @@
 </section>
       
       <section id="essencia">
+
+		
           <img class="essencia_img" src="https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif">
 		<h1>O PENSAMENTO EM PRÁTICA</h1>
 		<div>
@@ -1026,48 +1027,51 @@
 			<p>Não é apenas uma questão do meio ou da empresa. Ágil é sobre o ser humano. Entenda o contexto, crie repertório, compreenda a dinâmica das pessoas. O ágil tá nisso. Framework é detalhe.</p>
 		</div>
 		
-
+	
 		<div class="contexto">
 			<h2>CONTEXTO</h2>
 
 			<div>
 
-				<span>A queda do muro <br> de berlim.</span>
+				<span>A queda do muro de berlim.</span>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a augue in mauris pellentesque lacinia. Sed vel efficitur eros. Aenean pretium elementum pharetra.</p>
 			
 				<button>PASSADO</button>
 				<button onclick="carrossel()">FUTURO</button>
 			</div>
 		</div>
-		<!--
+	
 		
 
 		<div class="repertorio">
-			<h2>REPERTORIO</h2>			
-			<img id="repertorio-img" style="width: 330px;" src="imgs/tape.png"/>
-			<p>O que voce sabe?<br>O que pode ser usado a seu favor?<br>O que voce precisa aprender?<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a augue in mauris pellentesque lacinia.</p>
+			<h2>REPERTORIO</h2>
+			<div>
+				<img id="repertorio-img" src="imgs/tape.png"/>
+				<p>O que voce sabe?<br>O que pode ser usado a seu favor?<br>O que voce precisa aprender?<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a augue in mauris pellentesque lacinia.</p>
+			</div>	
+
 		</div>
 		
 		<div class="senso">
 			<h2>SENSO CRITICO</h2>
 			<div>
-				<img style="width: 250px;"  src="imgs/pense.png"/>
+				<img  src="imgs/pense.png"/>
 				<a class="a-videos" style="margin-top: 10px;">ver video 1 <img style="width: 3vw;" src="imgs/video-01.svg"/></a>	
 			</div>
 			<div>
-				<img style="width: 250px;"  src="imgs/pense.png"/>
+				<img  src="imgs/pense.png"/>
 				<a class="a-videos" style="margin-top: 10px;">ver video 1 <img style="width: 3vw;" src="imgs/video-01.svg"/></a>	
 			</div>
 			<div>
-				<img style="width: 250px;"  src="imgs/pense.png"/>
+				<img src="imgs/pense.png"/>
 				<a class="a-videos" style="margin-top: 10px;">ver video 1 <img style="width: 3vw;" src="imgs/video-01.svg"/></a>	
 			</div>
 			<div>
-				<img style="width: 250px;"  src="imgs/pense.png"/>
+				<img src="imgs/pense.png"/>
 				<a class="a-videos" style="margin-top: 10px;">ver video 1 <img style="width: 3vw;" src="imgs/video-01.svg"/></a>	
 			</div>
-		</div> -->
-      </section> 
+		</div>
+	  </section> 
   
       
       <section id="catalogo">
@@ -1138,6 +1142,45 @@
          </div>
       </section>
 
+	  <section id="cases">
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+				<h1>CASES</h1>
+				<!-- Full-width images with number and caption text -->
+				<div class="mySlides fade">
+				<div class="numbertext">
+					<h2>CASE 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in lorem feugiat, tempor risus venenatis, rhoncus odio. Integer nisi ligula, feugiat vel dui eget, volutpat elementum nibh. Praesent gravida neque posuere massa auctor fringilla</p>
+				</div>
+				</div>
+			
+				<div class="mySlides fade">
+				<div class="numbertext">
+						<h2>CASE 2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in lorem feugiat, tempor risus venenatis, rhoncus odio. Integer nisi ligula, feugiat vel dui eget, volutpat elementum nibh. Praesent gravida neque posuere massa auctor fringilla</p>
+				</div>
+				</div>
+			
+				<div class="mySlides fade">
+				<div class="numbertext">
+						<h2 >CASE 3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in lorem feugiat, tempor risus venenatis, rhoncus odio. Integer nisi ligula, feugiat vel dui eget, volutpat elementum nibh. Praesent gravida neque posuere massa auctor fringilla</p>
+				</div>
+				</div>
+			
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+				<br>
+				
+				<!-- The dots/circles -->
+				<div class="pointers" style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+	  </section>
      
 
 
@@ -1169,7 +1212,6 @@
 			<a class="nav-a" href="#o_que_e" onClick="activate()">A PROPOSTA</a>
 			<a class="nav-a" href="#essencia">O PENSAMENTO EM PRATICA</a>
 			<a class="nav-a" href="#catalogo">OS CURSOS</a>
-			<a class="nav-a">O METODO</a>
 			<a class="nav-a" href="#cultura">CULTURA AGIL</a>
 			<a class="nav-a" href="">CASES</a>
 			<a class="nav-a" href="#mastertech">A MASTERTECH</a>
@@ -1186,6 +1228,6 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
       <script src="js/main.js"> </script>
-      
+      <script src="js/slider.js"></script>
 </body>
 </html>
