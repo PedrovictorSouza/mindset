@@ -184,4 +184,9 @@ function changeToNormal() {
   $(".balao").css({"background":"url(imgs/balao-01.svg) no-repeat center", "color":"black", "transition":"1s"})
 }
 
+function showInfo() {
+  
+
+}
+
 

@@ -49,7 +49,8 @@
 
   button:hover {
     background: red;
-    color:white;
+    color: #cfd1d2;
+    border-bottom: 1px solid #bdbdbd;
     transition: .3s;
   }
   
@@ -220,7 +221,7 @@
   
   p {
     color: white;
-    font-size: 14pt;
+    font-size: 18pt;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     font-weight: 300;
@@ -269,6 +270,7 @@
     margin-right: 6em;
     margin-left: 2vw;
     margin-bottom: 8vh;
+    text-align: justify;
   }
 
 
@@ -365,7 +367,7 @@
   .dot {
     cursor: pointer;
     height: 2px;
-    width: 26vw;
+    width: 12.5vw;
     margin: 0 2px;
     background-color: #bbb;
     display: inline-block;
@@ -442,6 +444,10 @@
 }
 
 
+.catalogo-accordion {
+  display: none;
+}
+
   .catalogo_div {
     width: 80vw;
     justify-content: space-between;
@@ -494,7 +500,7 @@
     margin-top: 50px;
   }
 
-  .contexto {
+  .contexto, .repertorio {
     background-image: url(./imgs/art01.png);
     align-items: flex-start;
     background-size: cover;
@@ -505,6 +511,21 @@
     display: flex;
     width: 100%;
   }
+
+  .repertorio {
+    margin-top: 10vh;
+    background-image: url(./imgs/repertorio.png);
+  }
+
+  .repertorio p {
+    background: #ff0000;
+    transform: rotate(-10deg);
+    color: #ffffee;
+    margin-left: 10vw;
+    text-align: left;
+    padding: 27px;
+  }
+
 
   .contexto h2, .contexto span, .contexto p, .contexto button {
     margin: 30px;
@@ -525,10 +546,6 @@
     margin-top: 10vh;
   }
   
-  .repertorio p {
-    padding: 0em 2em 0em 5em;
-    align-self: center;
-  }
 
   .senso img {
     width: 17vw;
@@ -753,6 +770,7 @@
     text-align: center;
     padding-top: 10vh;
     color: red;
+    margin-top: 0px;
   }
 
   .subtitle {
@@ -792,6 +810,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-repeat: no-repeat;
   }
 
   
@@ -847,11 +866,20 @@
   #mastertech h1 {
     color: white;
     position: absolute;
-    top: -54vh;
+    top: 1000px;
     width: 150vw;
-    font-size: 8vw;
-    left: -67vw;
-    transform: rotate(-90deg);
+    font-size: 12vw;
+    left: 9vw;
+    transform: rotate(90deg);
+  }
+
+  #block-a {
+    height: 20vh;
+    width: 20vw;
+    background: blue;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
   }
 
   #nucleo {
@@ -1036,6 +1064,10 @@
   @media screen and (max-width: 768px) {
 
 
+    .catalogo-accordion {
+      display: block;
+  }
+
     #ementa {
       width: 60vw;
   }
@@ -1063,6 +1095,7 @@
   }
 
   .catalogo_div {
+    display: none;
     width: 100%;
     margin-top: 8vh;
   }
