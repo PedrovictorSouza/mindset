@@ -221,7 +221,7 @@
   
   p {
     color: white;
-    font-size: 18pt;
+    font-size: 16pt;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     font-weight: 300;
@@ -683,8 +683,8 @@
   .o_que_e_div_a {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .o_que_e_div_a h2 {
@@ -836,8 +836,7 @@
 
 
   .cultura_div_a, .cultura_div_b {
-    width: 35vw;
-    margin-right: 30px;
+    width: 38vw;
   }
 
   .cultura_text_a {
