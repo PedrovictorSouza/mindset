@@ -1,4 +1,5 @@
 var x = 2
+const nav = document.getElementById("nav")
 
 function carrossel() {
   var frame = document.getElementById('frame')
@@ -184,9 +185,13 @@ function changeToNormal() {
   $(".balao").css({"background":"url(imgs/balao-01.svg) no-repeat center", "color":"black", "transition":"1s"})
 }
 
-function showInfo() {
-  
-
+function openMenu() {
+  nav.style.display = "block"
 }
+
+function closeMenu() {
+  nav.style.display = "none"
+}
+
 
 

@@ -97,7 +97,7 @@
   h1 {
     font-weight: 400;
     font-family: morganite;
-    font-size: 15vw;
+    font-size: 12vw;
     letter-spacing: .8vw;
     font-weight: 700;
     color: red;
@@ -221,7 +221,7 @@
   
   p {
     color: white;
-    font-size: 16pt;
+    font-size: 15pt;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
     font-weight: 300;
@@ -253,6 +253,10 @@
   position: absolute;
   bottom: 0;
   height: 5vh;
+}
+
+#close {
+  display: none;
 }
   
   #mastertech h1 {
@@ -501,15 +505,17 @@
   }
 
   .contexto, .repertorio {
-    background-image: url(./imgs/art01.png);
     align-items: flex-start;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     flex-wrap: wrap;
-    height: 90vh;
     display: flex;
     width: 100%;
+  }
+
+  .contexto img {
+    width: 500px;
   }
 
   .repertorio {
@@ -537,22 +543,24 @@
   }
 
   .contexto div {
-    background: #00000096;
     width: 100%;
     align-self: flex-end;
+    justify-content: space-between;
+    display: flex;
+    height: 72%;
+    margin-top: 12px;
   }
 
-  .repertorio h2 {
-    margin-top: 10vh;
+  .contexto p {
+    margin: 0px;
   }
   
-
   .senso img {
     width: 17vw;
   }
 
   .cultura_oito_passos {
-    font-size: 15vw;
+    font-size: 12vw;
     letter-spacing: 1.6vw;
     z-index: 0;
     color: #ffffffde;
@@ -764,13 +772,13 @@
 
   
   .title {
-    letter-spacing: 25px;
     font-weight: 600;
     width: 100vw;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 19vh;
     color: red;
     margin-top: 0px;
+    font-size: 18vw;
   }
 
   .subtitle {
@@ -1014,8 +1022,10 @@
   }
 
   #logo {
-    width: 2.5vw;
-    margin-left: 10px;
+    width: 40px;
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
   }
   
   #o_que_e {
@@ -1058,9 +1068,43 @@
   }
 
 
+  #menu {
+    display: none; 
+  }
+
+
+  hr {
+    border: 1px solid #a9a1a1;
+    width: 100%;
+}
   
   
   @media screen and (max-width: 768px) {
+
+    #menu {
+      display: block;
+      width: 14vw;
+      position: fixed;
+      top: 1vh;
+      left: 1vw;
+      z-index: 1001;  
+    }
+
+    #logo {
+      width: 9.5vw;
+      margin-left: 10px;
+      top: 2.5vh;
+      left: 1.6vw;
+    }
+
+
+    #close {
+      display: block;
+      position: absolute;
+      bottom: 19px;
+      width: 11vw;
+      left: 3.5vw;
+    }
 
 
     .catalogo-accordion {
@@ -1122,7 +1166,22 @@
     }
 
     nav {
+      height: 100vh;
       display: none;
+    }
+
+    nav a {
+      font-size: 16pt;
+      margin-bottom: 3vh;
+      width: 100vw;
+    }
+
+    nav div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 4vw;
+      height: 100vh;
     }
 
     li.balao {
@@ -1164,8 +1223,7 @@
   }
 
   .contexto h2 {
-    align-self: flex-start;
-    margin: 20px;
+    margin: 0px;
   }
 
   .cultura_div_a, .cultura_div_b {
@@ -1209,8 +1267,12 @@
     }
 
     .title {
-      font-size: 16vw;
-      letter-spacing: 16px;
+      font-size: 25vw;
+      letter-spacing: 2px;
+    }
+
+    #lettering {
+      font-size: 1.2em;
     }
 
     #myVideo {
@@ -1220,6 +1282,7 @@
     #myVideoB {
       display: none;
     }
+
 
     #mastertech h2 {
       font-family: 'oswald';
