@@ -246,6 +246,13 @@ span {
     font-family: 'Oswald', sans-serif;
     color: red;
     width: 100%;
+    font-size: 1.2em;
+    line-height: 32px;
+}
+
+.contexto-span {
+    padding-top: 6vh;
+    padding-left: 3vw;
 }
 
 section#cases {
@@ -550,12 +557,14 @@ section#cases {
 
 .contexto img {
     margin-right: 2vw;
-    width: 35vw;
+    width: 100%;
 }
 
 .contexto div {
-    height: 36vh;
+    height: 63vh;
     overflow: hidden;
+    display: flex;
+    align-items: flex-start;
 }
 
 .repertorio {
@@ -578,18 +587,19 @@ section#cases {
 .contexto p,
 .contexto button {
     margin-right: 0px;
+    margin-top: 10vh;
 }
 
 .contexto p {
     margin: 0px;
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 36vh;
-    width: 40vw;
+    width: 37vw;
+    margin-top: 2vh;
+    margin-bottom: 15px;
+    margin-right: 2vw;
 }
 
 .senso img {
-    width: 15vw;
+    width: 36vw;
 }
 
 .cultura_oito_passos {
@@ -1003,19 +1013,20 @@ p.senso-text-b {
 .senso-a {
     display: flex;
     flex-wrap: wrap;
-    width: 38vw;
+    /* width: 100%; */
     align-items: center;
     justify-content: center;
 }
 
-.senso-b {
-    width: 40vw;
-    ;
+.senso-b p {
+    width: 100%;
+    margin-right: 0px;
 }
 
 .senso-a div {
-    width: 15vw;
+    width: 37vw;
     margin-right: 2vw;
+    margin-bottom: 5vh;
 }
 
 #home {
