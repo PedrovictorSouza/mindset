@@ -306,6 +306,13 @@ section#cases {
     display: flex;
 }
 
+#steps {
+    background: url('imgs/bg.svg');
+    background-size: cover;
+    padding: 0px;
+    padding-bottom: 6vh;
+}
+
 
 /* carrossel */
 
@@ -609,6 +616,7 @@ section#cases {
     color: #ffffffde;
     margin-top: 100px;
     font-weight: 700;
+    font-size: 7.5vw;
 }
 
 .essencia_a {
@@ -932,6 +940,7 @@ p.senso-text-b {
     margin-top: 12vh;
     margin-bottom: 5vh;
     z-index: 1001;
+    margin-left: 4.6em;
 }
 
 #popup_close {
