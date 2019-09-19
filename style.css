@@ -279,15 +279,28 @@ section#cases {
     letter-spacing: 7px;
 }
 
+#mastertech img {
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    height: 91vh;
+}
+
 #mastertech h2 {
     font-family: 'oswald';
-    font-size: 2vw;
-    font-weight: 100;
-    min-width: 50vw;
-    margin-right: 6em;
-    margin-left: 2vw;
-    margin-bottom: 8vh;
-    text-align: justify;
+    font-size: 3vw;
+    color: black;
+}
+
+#mastertech p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#mastertech span {
+    color: black;
+    font-size: 2em;
+    border-left: 0px;
 }
 
 #mastertech span {
@@ -300,10 +313,6 @@ section#cases {
     border-left: 2px solid #0b080b;
     height: fit-content;
     padding-left: 1vw;
-}
-
-#mastertech div {
-    display: flex;
 }
 
 #steps {
@@ -514,7 +523,6 @@ section#cases {
 }
 
 .catalogo_div div {
-    border-left: 1px solid red;
     padding-left: 1vw;
 }
 
@@ -535,13 +543,9 @@ section#cases {
     letter-spacing: 1px;
     margin-bottom: 6px;
     margin-top: 0px;
-    line-height: 30px;
-    font-size: 1.2em;
-    height: 2vh;
 }
 
 .catalogo_div div {
-    width: 18vw;
     margin-bottom: 8vh;
     /* margin-right: 3vw; */
     display: flex;
@@ -551,6 +555,11 @@ section#cases {
 
 .catalogo_div img {
     width: 15vw;
+}
+
+p.catalogo_div_sinopse {
+    height: 2vh;
+    font-size: 1em;
 }
 
 .contato_text {
@@ -927,7 +936,6 @@ p.senso-text-b {
     padding-top: 10vh;
     width: 100%;
     background: #ff3d00;
-    height: 150vh;
 }
 
 #mastertech h1 {
@@ -1139,6 +1147,14 @@ p.senso-text-b {
 hr {
     width: 100%;
     margin-top: 5vh;
+}
+
+#mastertech div {
+    margin-left: 0vw;
+    background: #ff3d00;
+    padding-left: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
 }
 
 @media screen and (max-width: 768px) {
