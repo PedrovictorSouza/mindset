@@ -208,7 +208,7 @@ function flipImg() {
         contextoImg.src = 'imgs/art01.png'
         img_id = 'c'
     }
-    setTimeout(flipImg, 500);
+    setTimeout(flipImg, 1000);
 }
 
 flipImg()

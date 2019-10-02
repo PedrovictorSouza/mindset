@@ -6,21 +6,21 @@
 
 /* width */
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 20px;
 }
 
 
 /* Track */
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     border: 1px solid red;
 }
 
 
 /* Handle */
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: red;
 }
 
@@ -41,6 +41,7 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 button {
@@ -65,10 +66,11 @@ a {
     text-decoration: none;
     width: auto;
     color: white;
+    font-size: 1vw;
 }
 
 a:hover {
-    cursor: pointer;
+    cursor: url('imgs/brain.svg') auto;
 }
 
 footer {
@@ -77,6 +79,8 @@ footer {
     justify-content: flex-end;
     background: #000000;
     min-height: 50vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
 }
 
 footer a {
@@ -92,6 +96,7 @@ footer img {
     top: 2vh;
     left: 1vw;
     max-width: 3vw;
+    left: 10vw;
 }
 
 h1,
@@ -278,24 +283,27 @@ section#cases {
     letter-spacing: 7px;
 }
 
+section#mastertech {
+    padding-top: 0px;
+}
+
 #mastertech img {
-    position: absolute;
-    top: 13vh;
-    left: 12vw;
-    height: 91vh;
+    width: 18vw;
+    align-self: flex-start;
+    padding-top: 1vh;
 }
 
 #mastertech h2 {
     font-family: 'oswald';
     font-size: 3vw;
     color: black;
-    padding-left: 10vw;
 }
 
 #mastertech p {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 10vw;
+    width: 55vw;
+    margin-left: 20px;
 }
 
 #mastertech span {
@@ -306,14 +314,10 @@ section#cases {
 
 #mastertech span {
     font-family: 'morganite';
-    font-size: 2.5em !important;
     color: black;
     font-weight: 200;
     letter-spacing: 5px;
     margin-top: 15vh;
-    border-left: 2px solid #0b080b;
-    height: fit-content;
-    padding-left: 1vw;
 }
 
 #steps {
@@ -443,6 +447,27 @@ section#cases {
     animation-duration: 1.5s;
 }
 
+div#text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding-top: 24vh;
+}
+
+#text-top div:nth-child(1) {
+    padding-top: 0px;
+    max-width: 67vw;
+    overflow: hidden;
+}
+
+#text-top div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @-webkit-keyframes fade {
     from {
         opacity: .4
@@ -548,7 +573,6 @@ section#cases {
     display: flex;
     flex-direction: column;
     align-items: space-around;
-    margin-bottom: 10vh;
 }
 
 .catalogo_div img {
@@ -609,6 +633,10 @@ p.catalogo_div_sinopse {
     margin-left: 10vw;
     text-align: left;
     padding: 27px;
+}
+
+button.portfolio-btn {
+    font-size: 18pt;
 }
 
 .contexto h2,
@@ -773,7 +801,7 @@ p.catalogo_div_sinopse {
 
 .o_que_e_div_b h2 {
     width: fit-content;
-    text-align: left;
+    text-align: center;
 }
 
 .o_que_e_div div {
@@ -841,9 +869,8 @@ p.senso-text-b {
 
 .title {
     font-weight: 600;
-    width: 100vw;
+    width: fit-content;
     text-align: center;
-    padding-top: 19vh;
     color: red;
     margin-top: 0px;
     font-size: 18vw;
@@ -882,10 +909,20 @@ p.senso-text-b {
     width: 40vw;
 }
 
+#text-top p {
+    font-size: 8pt;
+    margin-bottom: 0px;
+    align-self: flex-start;
+}
+
 #catalogo {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#escola {
+    background: url('imgs/fluibg.svg');
     background-repeat: no-repeat;
 }
 
@@ -1060,7 +1097,7 @@ p.senso-text-b {
 .repertorio h2,
 .senso h2 {
     width: 100%;
-    font-size: 3em;
+    font-size: 6em;
     color: #f93c03;
 }
 
@@ -1077,6 +1114,7 @@ p.senso-text-b {
     justify-content: center;
     align-items: center;
     background-size: cover;
+    background: #0d0d0d;
 }
 
 #myVideo,
@@ -1102,6 +1140,7 @@ p.senso-text-b {
     display: none;
     width: 100%;
     text-align: center;
+    max-width: 80vw;
 }
 
 #logo {
@@ -1161,12 +1200,21 @@ hr {
 #mastertech div {
     margin-left: 0vw;
     background: #ff3d00;
-    padding-left: 5vw;
-    padding-top: 2vh;
-    padding-bottom: 5vh;
+    padding: 4vw;
+    padding-bottom: 10vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
+    #text-top div:nth-child(1) {
+        padding-top: 13vh;
+        max-width: 100%;
+    }
+    .portfolio-btn {
+        margin-top: 10vh;
+    }
     button:hover {
         border-bottom: 1px solid #bdbdbd;
     }
@@ -1254,9 +1302,13 @@ hr {
     }
     li.balao {
         width: 35vw;
+        height: fit-content;
+        min-height: 15vh;
+        font-size: 10pt;
+        text-align: center;
     }
     p {
-        font-size: 16pt;
+        font-size: 14pt;
         max-width: 100%;
         width: 100%;
     }
@@ -1264,9 +1316,6 @@ hr {
         margin-bottom: 8vh;
         width: 45%;
         min-width: 200px;
-    }
-    .o_que_e_div_b {
-        justify-content: flex-start;
     }
     .contexto button {
         width: 43vw;
@@ -1298,13 +1347,9 @@ hr {
         height: fit-content;
     }
     .home-texts {
-        height: 40vh;
-        align-items: flex-end;
+        height: 100vh;
+        align-items: center;
         display: flex;
-        margin-bottom: 9vh;
-    }
-    .home-texts a h1 {
-        margin-bottom: 13vh;
     }
     .home-texts a:nth-child(3) {
         width: 27vw;
@@ -1322,7 +1367,9 @@ hr {
         letter-spacing: 2px;
     }
     #lettering {
-        font-size: 1.2em;
+        font-size: 14px;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
     #myVideo {
         width: 100%;
