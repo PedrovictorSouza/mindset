@@ -85,6 +85,9 @@ footer {
 
 footer a {
     margin: 20px;
+    font-size: 12pt;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 footer div {
@@ -92,11 +95,11 @@ footer div {
 }
 
 footer img {
-    position: absolute;
     top: 2vh;
     left: 1vw;
-    max-width: 3vw;
     left: 10vw;
+    width: 60px;
+    position: absolute;
 }
 
 h1,
@@ -288,7 +291,7 @@ section#mastertech {
 }
 
 #mastertech img {
-    width: 18vw;
+    width: 9vw;
     align-self: flex-start;
     padding-top: 1vh;
 }
@@ -573,6 +576,7 @@ div#text-top {
     display: flex;
     flex-direction: column;
     align-items: space-around;
+    margin-top: 10vh;
 }
 
 .catalogo_div img {
@@ -604,8 +608,8 @@ p.catalogo_div_sinopse {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -636,7 +640,17 @@ p.catalogo_div_sinopse {
 }
 
 button.portfolio-btn {
+    width: 300px;
+}
+
+button.portfolio-btn a {
     font-size: 18pt;
+    color: red;
+}
+
+button.portfolio-btn a:hover {
+    font-size: 18pt;
+    color: white;
 }
 
 .contexto h2,
@@ -910,7 +924,7 @@ p.senso-text-b {
 }
 
 #text-top p {
-    font-size: 8pt;
+    font-size: 12pt;
     margin-bottom: 0px;
     align-self: flex-start;
 }
@@ -1207,7 +1221,40 @@ hr {
     flex-wrap: wrap;
 }
 
+#info-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
+    footer img {
+        position: inherit;
+    }
+    footer div {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 6vh;
+        margin-bottom: 5vh;
+    }
+    #info-mobile {
+        display: block;
+    }
+    #nucleo {
+        display: none;
+    }
+    .contexto {
+        margin-top: 100px;
+    }
+    .contexto p {
+        width: 100%;
+    }
+    #text-top p {
+        font-size: 8pt;
+    }
+    #mastertech img {
+        width: 9vw;
+    }
     #text-top div:nth-child(1) {
         padding-top: 13vh;
         max-width: 100%;
@@ -1257,6 +1304,7 @@ hr {
     }
     #mastertech div {
         flex-wrap: wrap;
+        margin-top: 10vh;
     }
     #mastertech div h2 {
         min-width: 80%;
@@ -1282,7 +1330,6 @@ hr {
     }
     h2 {
         font-size: 12.5vw;
-        max-width: 50vw;
     }
     nav {
         height: 100vh;
