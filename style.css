@@ -32,7 +32,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     background-color: #0b080b;
 }
 
@@ -1227,6 +1226,9 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+    .o_que_e_div {
+        justify-content: flex-end;
+    }
     .repertorio p {
         transform: rotate(0deg);
         margin: 0px;
@@ -1426,6 +1428,7 @@ hr {
     .o_que_e_div ul {
         height: 67vh;
         overflow-y: scroll;
+        width: 53vw;
     }
     .title {
         font-size: 25vw;
