@@ -16,8 +16,10 @@
 <body>
 
     <!-- Sanduiche -->
-    <a data-aos="fade" data-aos-duration="1500" href="#home" onclick="openMenu()"><img id="menu" src="imgs/menu.svg"></a>
-    <nav id="nav" data-aos="fade" data-aos-duration="1000">
+    <a data-aos="fade" data-aos-duration="1500" href="#home" onclick="openMenu()">
+        <img id="menu" src="imgs/menu.svg">
+    </a>
+    <nav class="nav-menu" id="nav" data-aos="fade" data-aos-duration="1000">
         <a class="menu-btn-a" onclick="closeMenu()" data-aos="fade" data-aos-duration="1500"><img id="close" src="imgs/close.svg"></a>
         <a class="menu-btn-b" data-aos="fade" data-aos-duration="1500" href="#home"><img id="logo" src="imgs/logo_mt.svg"></a>
         <div>
@@ -25,7 +27,6 @@
             <a class="nav-a" href="#cultura">CULTURA AGIL</a>
             <a class="nav-a" href="#essencia">O PENSAMENTO EM PRÁTICA</a>
             <a class="nav-a" href="#catalogo">OS CURSOS</a>
-            <a class="nav-a" href="#cases">CASES</a>
             <a class="nav-a" href="#mastertech">A MASTERTECH</a>
             <a class="nav-a" onclick="showHeight()">CONTATO</a>
         </div>
@@ -49,8 +50,7 @@
                 </div>
 
                 <div>
-
-                    <button class="portfolio-btn"><a href="#catalogo">VEJA NOSSO PORTFÓLIO</a></button>
+                    <a href="#catalogo"><button class="portfolio-btn">VEJA NOSSO PORTFÓLIO</button></a>
                 </div>
 
             </div>
@@ -1170,22 +1170,22 @@
 
             <div class="senso-a">
                 <div>
-                    <img src="imgs/tv.png" />
+                    <img style="cursor: pointer;" src="imgs/tv-linhas.png" />
                     <a class="a-videos" style="margin-top: 10px;">ver video 1 <img style="width: 3vw;"
 									src="imgs/video-01.svg" /></a>
                 </div>
                 <div>
-                    <img src="imgs/tv.png" />
+                    <img style="cursor: pointer;" src="imgs/tv-arte.png" />
                     <a class="a-videos" style="margin-top: 10px;">ver video 2 <img style="width: 3vw;"
 									src="imgs/video-01.svg" /></a>
                 </div>
                 <div>
-                    <img src="imgs/tv.png" />
+                    <img style="cursor: pointer;" src="imgs/tv-pense.png" />
                     <a class="a-videos" style="margin-top: 10px;">ver video 3 <img style="width: 3vw;"
 									src="imgs/video-01.svg" /></a>
                 </div>
                 <div>
-                    <img src="imgs/tv.png" />
+                    <img style="cursor: pointer;" src="imgs/tv-something.png" />
                     <a class="a-videos" style="margin-top: 10px;">ver video 4 <img style="width: 3vw;"
 									src="imgs/video-01.svg" /></a>
                 </div>
@@ -1287,7 +1287,7 @@
             <div data-aos="zoom-in">
                 <h5>CURSO:</h5>
                 <h4>TECH AND AGILE DRIVEN</h4>
-                <img src="imgs/poster-agile.png">
+                <img style="border: 2px solid red;" src="imgs/poster-agile.png">
                 <h5 class="catalogo_div_sinopse">SINOPSE:</h5>
                 <p>É mindset ágil com tecnologias modernas. É o pacote mental e comportamental com os métodos ágeis, combinados com o entendimento de como as tecnologias emergentes remodelaram cenários de gestão e produção de novas soluções. Você não vai
                     sair desse curso pronto para trabalhar no vale do silício, mas, definitivamente, vai entender que seus vales de conhecimento não precisam ser tão profundos assim em tecnologia.</p>
@@ -1307,7 +1307,7 @@
             <div data-aos="zoom-in">
                 <h5>CURSO:</h5>
                 <h4>HUMANOS DIGITAIS</h4>
-                <img src="imgs/poster-df.png">
+                <img style="border: 2px solid red;" src="imgs/poster-humanos.png">
                 <h5 class="catalogo_div_sinopse">SINOPSE:</h5>
                 <p>"você realmente escuta o que as outras pessoas estão falando?"</p>
                 <button>VER CURSO</button>
@@ -1559,7 +1559,7 @@
         </div>
     </section>
     <footer>
-        <div>
+        <div class="footer-a">
             <img src="imgs/logo_mt.svg" />
             <a class="nav-a" href="#o_que_e" onClick="activate()">A PROPOSTA</a>
             <a class="nav-a" href="#essencia">O PENSAMENTO EM PRATICA</a>
@@ -1569,16 +1569,27 @@
             <a class="nav-a" href="#mastertech">A MASTERTECH</a>
             <a class="nav-a" onclick="showHeight()">CONTATO</a>
         </div>
+        <hr>
+        <div class="footer-b">
+            <div>
+                <h4>Fale com a gente</h4>
+                <p>Email: oi@mastertech.tech</p>
+                <p>Whats: (11) 99801-1661</p>
+                <p>CNPJ: 24.964.042/0001-00</p>
+            </div>
+            <div>
+                <h4>A Mastertech</h4>
+                <p>Localização</p>
+                <p>Blog</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/main.js">
-    </script>
+    <script src="js/main.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/animation.js"></script>
 </body>
 
 </html>

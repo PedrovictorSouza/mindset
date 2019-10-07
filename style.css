@@ -80,6 +80,7 @@ footer {
     min-height: 50vh;
     padding-right: 10vw;
     padding-left: 10vw;
+    flex-wrap: wrap;
 }
 
 footer a {
@@ -91,14 +92,35 @@ footer a {
 
 footer div {
     margin-top: 3vh;
+    width: 100%;
 }
 
 footer img {
     top: 2vh;
     left: 1vw;
     left: 10vw;
-    width: 60px;
+    width: 40px;
     position: absolute;
+}
+
+.footer-a {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+
+.footer-b div {
+    width: 23.6vw;
+}
+
+.footer-b {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0px;
+}
+
+.footer-b p {
+    margin: 0px;
 }
 
 h1,
@@ -640,6 +662,10 @@ p.catalogo_div_sinopse {
 
 button.portfolio-btn {
     width: 300px;
+}
+
+button.portfolio-btn:hover {
+    color: white;
 }
 
 button.portfolio-btn a {
@@ -1209,6 +1235,8 @@ p.senso-text-b {
 hr {
     width: 100%;
     margin-top: 5vh;
+    height: 1px;
+    color: red;
 }
 
 #mastertech div {
@@ -1239,13 +1267,17 @@ hr {
     footer img {
         position: inherit;
     }
-    footer div {
+    .footer-a {
         margin-top: 0;
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-top: 6vh;
         margin-bottom: 5vh;
+    }
+    .footer-b div {
+        width: 45.6vw;
+        margin-right: 20px;
     }
     #info-mobile {
         display: block;
