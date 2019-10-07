@@ -1118,6 +1118,7 @@ p.senso-text-b {
 .repertorio,
 .senso {
     margin-top: 15vh;
+    height: fit-content;
 }
 
 #home {
@@ -1226,6 +1227,13 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+    .repertorio p {
+        transform: rotate(0deg);
+        margin: 0px;
+    }
+    div#text-top {
+        justify-content: flex-start;
+    }
     footer img {
         position: inherit;
     }
@@ -1276,15 +1284,11 @@ hr {
     #logo {
         width: 9.5vw;
         margin-left: 10px;
-        top: 2.5vh;
-        left: 1.6vw;
     }
     #close {
         display: block;
         position: absolute;
-        bottom: 19px;
         width: 11vw;
-        left: 3.5vw;
     }
     .catalogo-accordion {
         display: block;
@@ -1340,12 +1344,26 @@ hr {
         margin-bottom: 3vh;
         width: 100vw;
     }
+    .menu-btn-a,
+    .menu-btn-b {
+        position: absolute;
+    }
+    .menu-btn-a {
+        bottom: 20.3vh;
+        left: 3.5vw;
+    }
+    .menu-btn-b {
+        top: 2.5vh;
+        left: 1.6vw;
+    }
     nav div {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 4vw;
         height: 100vh;
+        margin: 0px;
+        box-sizing: border-box;
+        padding: 4vw;
     }
     li.balao {
         width: 35vw;
