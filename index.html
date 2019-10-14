@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" href="imgs/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleB.css">
@@ -23,11 +24,11 @@
         <a class="menu-btn-a" onclick="closeMenu()" data-aos="fade" data-aos-duration="1500"><img id="close" src="imgs/close.svg"></a>
         <a class="menu-btn-b" data-aos="fade" data-aos-duration="1500" href="#home"><img id="logo" src="imgs/logo_mt.svg"></a>
         <div>
-            <a class="nav-a" href="#o_que_e" onClick="activate()">A PROPOSTA</a>
-            <a class="nav-a" href="#cultura">CULTURA AGIL</a>
-            <a class="nav-a" href="#essencia">O PENSAMENTO EM PRÁTICA</a>
-            <a class="nav-a" href="#catalogo">OS CURSOS</a>
-            <a class="nav-a" href="#mastertech">A MASTERTECH</a>
+            <a class="nav-a" href="#o_que_e" onclick="closeMenu()">A PROPOSTA</a>
+            <a class="nav-a" href="#cultura" onclick="closeMenu()">CULTURA AGIL</a>
+            <a class="nav-a" href="#essencia" onclick="closeMenu()">O PENSAMENTO EM PRÁTICA</a>
+            <a class="nav-a" href="#catalogo" onclick="closeMenu()">OS CURSOS</a>
+            <a class="nav-a" href="#mastertech" onclick="closeMenu()">A MASTERTECH</a>
             <a class="nav-a" onclick="showHeight()">CONTATO</a>
         </div>
     </nav>
@@ -1115,9 +1116,6 @@
             <p>Siga o contexto. A insistência em práticas habituais, na vida ou em gestão, pode, ao mesmo tempo, ser racional e irracional. O que pende a balança para um lado ou para o outro é a consistência dos resultados. Se as perguntas parecem desconectadas
                 e já não fazem mais sentido, se as respostas geradas pelos modelos vigentes estão cada vez mais divergentes, compreenda o contexto.</p>
 
-            <p>Por que os momentos de crise são os mais produtivos em inovação? O que determina que uma cultura prevaleça em eficiência sobre outras? Por que existem ondas de comportamentos e como elas se espalham? Como surgem os novos hábitos de consumo
-                ou de aversão ao consumo? A mão do mercado é mesmo invisível ou faltam boas lentes?</p>
-
             <div>
                 <img id="contextoImg" src="imgs/art01.png" alt="">
             </div>
@@ -1201,46 +1199,62 @@
         <h1>PORTFÓLIO</h1>
         <!-- CATALOGO MOBILE -->
         <div class="catalogo-accordion">
-            <button class="accordion">Inception</button>
+            <button onclick="accordion(0)" class="accordion">Inception
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>Lorem ipsum...</p>
             </div>
 
-            <button class="accordion">Scrum com legos</button>
+            <button onclick="accordion(1)" class="accordion">Scrum com legos
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>Esse curso é pra saber como o framework funciona. Rápido e lúdico, é um bom ponto de partida. Mas é um ponto. E é de partida. Entendeu? Faça, mas saiba que continuar é preciso.</p>
             </div>
 
-            <button class="accordion">Design Sprint</button>
+            <button onclick="accordion(2)" class="accordion">Design Sprint
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>Lorem ipsum...</p>
             </div>
 
-            <button class="accordion">Gestão Visual</button>
+            <button onclick="accordion(3)" class="accordion">Gestão Visual
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>É sobre técnicas de síntese visual. Sobre o que importa saber e o que importa comunicar para todos. Sobre ser dinâmico e não sobre ser estático. Sobre provocar interação e não sobre virar paisagem. Sobre gerenciar recursos, fluxos de produção
                     e sobre feedback rápido. Também chamado de Kanban.</p>
             </div>
 
-            <button class="accordion">Metricas Ágeis</button>
+            <button onclick="accordion(4)" class="accordion">Metricas Ágeis
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>Medir ou não medir, eis a questão? Errado. A questão é outra. A diferença entre tomar boas decisões e se afogar em números. Você não quer se afogar, quer? Estatisticamente, mortes por afogamento... (acho que esse dado pouco importa no
                     seu contexto, certo?).</p>
             </div>
 
-            <button class="accordion">Tech and agile driven</button>
+            <button onclick="accordion(5)" class="accordion">Tech and agile driven
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>É mindset ágil com tecnologias modernas. É o pacote mental e comportamental com os métodos ágeis, combinados com o entendimento de como as tecnologias emergentes remodelaram cenários de gestão e produção de novas soluções. Você não vai
                     sair desse curso pronto para trabalhar no vale do silício, mas, definitivamente, vai entender que seus vales de conhecimento não precisam ser tão profundos assim em tecnologia.</p>
             </div>
 
-            <button class="accordion">Mindset Ágil</button>
+            <button onclick="accordion(6)" class="accordion">Mindset Ágil
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>Um pacote de sobrevivência construído com lógica trivial. Do contexto atual aos frameworks clássicos, passando por papéis, cerimônias e artefatos, trabalhando com métricas e modelagens de negócios, num equilíbrio entre teoria e prática,
                     simulação e realidade. Um curso que hoje é moda, mas que vai continuar aqui quando deixar de ser, pois vai continuar sendo óbvio, lógico e necessário </p>
             </div>
 
-            <button class="accordion">Gestão de projetos ágeis</button>
+            <button onclick="accordion(7)" class="accordion">Gestão de projetos ágeis
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>É uma formação acelerada de um gestor de projetos em contexto de metodologias ágeis. É nossa formação mais ampla em metodologias ágeis e compreende contexto, frameworks, gestão visual, métricas, modelagens de negócios, design thinking
                     e tecnologias emergentes. É um curso de teorias, métodos, usos e práticas, com equilíbrio de atividades e exposição de conceitos.</p>
@@ -1309,7 +1323,9 @@
                 <h4>HUMANOS DIGITAIS</h4>
                 <img style="border: 2px solid red;" src="imgs/poster-humanos.png">
                 <h5 class="catalogo_div_sinopse">SINOPSE:</h5>
-                <p>"você realmente escuta o que as outras pessoas estão falando?"</p>
+                <p>É uma tradução dos tempos digitais para profissionais que conciliam a gestão de humanos e a gestão de negócios. É uma ponte entre passado, presente e futuro, destacando a simbiose entre pessoas, processos e sistemas na chamada fronteira
+                    entre a indústria 4.0 e a sociedade 5.0. É uma imersão em conhecimento de novas tecnologias e nos métodos de gerenciamento que otimizam essa simbiose. Humanos digitais é tradução, ponte e imersão. É para pessoas comuns em um mundo
+                    digital. É para permanecer comum, mas para compreender o como e o porquê as peças se movimentam do jeito atual. E, eventualmente, para remodelar o tabuleiro do jogo corporativo.</p>
                 <button>VER CURSO</button>
             </div>
 
@@ -1433,18 +1449,24 @@
         <h1>UMA ESCOLA QUE FLUI</h1>
         <!-- CATALOGO MOBILE -->
         <div class="catalogo-accordion">
-            <button class="accordion">2015</button>
+            <button onclick="accordion(8)" class="accordion">2015
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>O início</p>
             </div>
 
-            <button class="accordion">2016</button>
+            <button onclick="accordion(9)" class="accordion">2016
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>CODING SCHOOL</p>
                 <p>SOFTWARE HOUSE</p>
             </div>
 
-            <button class="accordion">2017</button>
+            <button onclick="accordion(10)" class="accordion">2017
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>CODING SCHOOL</p>
                 <p>SOFTWARE HOUSE</p>
@@ -1452,7 +1474,9 @@
                 <p>DIGITAL TRANSFORMATION</p>
             </div>
 
-            <button class="accordion">2018</button>
+            <button onclick="accordion(11)" class="accordion">2018
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>CODING SCHOOL</p>
                 <p>SOFTWARE HOUSE</p>
@@ -1463,7 +1487,9 @@
                 <p>PUBLIC AFFAIRS</p>
             </div>
 
-            <button class="accordion">2019</button>
+            <button onclick="accordion(12)" class="accordion">2019
+							<img class="btnAccordion" style="width: 16px;" src="imgs/btn-accordion.svg" alt="">
+						</button>
             <div class="panel">
                 <p>CODING SCHOOL</p>
                 <p>SOFTWARE HOUSE</p>
@@ -1579,8 +1605,8 @@
             </div>
             <div>
                 <h4>A Mastertech</h4>
-                <p>Localização</p>
-                <p>Blog</p>
+                <p>Av. Paulista - 1745</p>
+                <p>mastertech.com.br</p>
             </div>
         </div>
     </footer>

@@ -193,6 +193,19 @@ function closeMenu() {
     nav.style.display = "none"
 }
 
+var activate = false
+function accordion(x) {
+    
+    if(activate === false) {
+        document.getElementsByClassName('btnAccordion')[x].src = "imgs/btn-accordion-b.svg"
+        activate = true
+    } else {
+        document.getElementsByClassName('btnAccordion')[x].src = "imgs/btn-accordion.svg"
+        activate = false
+        console.log('aqui')
+    }
+}
+
 
 var contextoImg = document.getElementById("contextoImg")
 var img_id = "c"
