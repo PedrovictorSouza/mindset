@@ -35,11 +35,12 @@ html {
 }
 
 body {
-  background: #000;
+  background: #b9b9b9;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -91,6 +92,7 @@ footer {
   padding-right: 10vw;
   padding-left: 10vw;
   flex-wrap: wrap;
+  padding-bottom: 5vh;
 }
 
 footer div {
@@ -131,7 +133,7 @@ nav div {
 }
 
 p {
-  color: white;
+  color: #292020;
   font-size: 15pt;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
@@ -155,7 +157,7 @@ h1 {
   font-size: 12vw;
   letter-spacing: 0.8vw;
   font-weight: 700;
-  color: red;
+  color: #1f1c1c;
   width: 100%;
   margin-top: 14vh;
   text-align: left;
@@ -190,7 +192,7 @@ h5 {
 }
 
 h4 {
-  color: red;
+  color: white;
   font-family: 'Morganite', sans-serif;
   font-size: 30pt;
   font-weight: 300;
@@ -241,7 +243,7 @@ li {
 nav {
   position: fixed;
   top: 0;
-  background: black;
+  background: #403d3d;
   width: 100vw;
   height: 7vh;
   display: flex;
@@ -276,7 +278,7 @@ span {
 
 .contexto-span {
   padding-top: 6vh;
-  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 section#cases {
@@ -326,7 +328,7 @@ section#mastertech {
 
 .contexto img {
   margin-right: 2vw;
-  width: 100%;
+  width: 30%;
 }
 
 .senso img {
@@ -631,11 +633,11 @@ div#text-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 10vh;
 }
 
 .catalogo_div_sinopse {
   margin-top: 20px;
-  color: red;
   font-size: 22pt;
   letter-spacing: 2px;
 }
@@ -671,7 +673,7 @@ p.catalogo_div_sinopse {
 
 .repertorio {
   margin-top: 10vh;
-  background-image: url(./imgs/repertorio.png);
+  background-image: url(./imgs/burst-a.jpg);
   height: 100vh;
 }
 
@@ -909,9 +911,10 @@ p.senso-text-b {
   font-weight: 600;
   width: fit-content;
   text-align: center;
-  color: red;
+  color: white;
   margin-top: 0;
-  font-size: 18vw;
+  font-size: 17vw;
+  opacity: .8;
 }
 
 .subtitle {
@@ -1134,7 +1137,8 @@ p.senso-text-b {
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background: #0d0d0d;
+  background-image: url('./imgs/whenSheBlooms.jpg');
+  background-position: center;
 }
 
 #myVideo,
@@ -1164,7 +1168,7 @@ p.senso-text-b {
 }
 
 #logo {
-  width: 40px;
+  width: 11vw;
   position: absolute;
   top: 1vh;
   left: 1vw;
@@ -1224,6 +1228,12 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+
+
+  .contexto img {
+    width: 70%;
+  }
+
   #mastertech p {
     width: 66vw;
   }
@@ -1319,8 +1329,7 @@ hr {
   }
 
   #logo {
-    width: 9.5vw;
-    margin-left: 10px;
+    width: 150px;
   }
 
   #close {
@@ -1388,7 +1397,7 @@ hr {
   }
 
   nav a {
-    font-size: 16pt;
+    font-size: 50pt;
     margin-bottom: 3vh;
     width: 100vw;
   }
@@ -1423,7 +1432,7 @@ hr {
     text-align: center;
   }
   p {
-    font-size: 14pt;
+    font-size: 18pt;
     max-width: 100%;
     width: 100%;
   }
@@ -1445,7 +1454,6 @@ hr {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-around;
-    background: #000000ba;
     height: fit-content;
   }
 

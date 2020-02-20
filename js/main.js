@@ -212,13 +212,13 @@ var img_id = "c"
 
 function flipImg() {
     if (img_id == 'c') {
-        contextoImg.src = 'imgs/art02.png'
+        contextoImg.src = 'imgs/elxupete.jpeg'
         img_id = 'm'
     } else if (img_id == 'm') {
-        contextoImg.src = 'imgs/art03.png'
+        contextoImg.src = 'imgs/eva-c.jpg'
         img_id = 'd'
     } else if (img_id == 'd') {
-        contextoImg.src = 'imgs/art01.png'
+        contextoImg.src = 'imgs/busart.jpeg'
         img_id = 'c'
     }
     setTimeout(flipImg, 1000);
